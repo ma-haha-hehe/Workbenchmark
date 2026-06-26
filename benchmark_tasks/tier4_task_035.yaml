@@ -1,7 +1,7 @@
 blocks:
 - name: 4x2_brick_1
   type: brick_4x2
-  color: red
+  color: yellow
   pos:
   - -0.016
   - 0.164
@@ -9,24 +9,24 @@ blocks:
   rotation:
   - 0
   - 0
-  - 90
+  - 0
 - name: 2x2_brick_2
   type: brick_2x2
-  color: red
+  color: yellow
   pos:
-  - -0.048
-  - 0.18
+  - -0.064
+  - 0.164
   - 0.0
   rotation:
   - 0
   - 0
   - 0
-- name: 4x2_brick_3
-  type: brick_4x2
-  color: red
+- name: 2x2_brick_3
+  type: brick_2x2
+  color: green
   pos:
-  - -0.08
-  - 0.18
+  - -0.048
+  - 0.196
   - 0.0
   rotation:
   - 0
@@ -34,21 +34,21 @@ blocks:
   - 90
 - name: 4x2_brick_4
   type: brick_4x2
-  color: red
+  color: yellow
   pos:
-  - -0.048
+  - -0.032
   - 0.18
   - 0.0191
   rotation:
   - 0
   - 0
-  - 0
-- name: 4x2_brick_5
-  type: brick_4x2
-  color: green
+  - 90
+- name: 2x2_brick_5
+  type: brick_2x2
+  color: red
   pos:
-  - -0.032
-  - 0.148
+  - -0.064
+  - 0.18
   - 0.0191
   rotation:
   - 0
@@ -56,44 +56,44 @@ blocks:
   - 0
 - name: 4x2_brick_6
   type: brick_4x2
-  color: green
+  color: blue
   pos:
-  - -0.032
+  - -0.048
+  - 0.18
+  - 0.0382
+  rotation:
+  - 0
+  - 0
+  - 90
+- name: 2x2_brick_7
+  type: brick_2x2
+  color: blue
+  pos:
+  - -0.064
+  - 0.148
+  - 0.0191
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_8
+  type: brick_2x2
+  color: blue
+  pos:
+  - -0.016
   - 0.164
   - 0.0382
   rotation:
   - 0
   - 0
-  - 0
-- name: 2x2_brick_7
-  type: brick_2x2
-  color: yellow
+  - 90
+- name: 4x2_brick_9
+  type: brick_4x2
+  color: blue
   pos:
   - 0.0
-  - 0.18
+  - 0.164
   - 0.0191
-  rotation:
-  - 0
-  - 0
-  - 90
-- name: 4x2_brick_8
-  type: brick_4x2
-  color: yellow
-  pos:
-  - -0.096
-  - 0.18
-  - 0.0191
-  rotation:
-  - 0
-  - 0
-  - 90
-- name: 2x2_brick_9
-  type: brick_2x2
-  color: green
-  pos:
-  - -0.048
-  - 0.196
-  - 0.0382
   rotation:
   - 0
   - 0
@@ -102,10 +102,21 @@ blocks:
   type: brick_4x2
   color: blue
   pos:
-  - -0.096
-  - 0.164
-  - 0.0382
+  - -0.032
+  - 0.18
+  - 0.0573
   rotation:
   - 0
   - 0
-  - 90
+  - 0
+- name: 2x2_brick_11
+  type: brick_2x2
+  color: green
+  pos:
+  - -0.032
+  - 0.148
+  - 0.0573
+  rotation:
+  - 0
+  - 0
+  - 0
