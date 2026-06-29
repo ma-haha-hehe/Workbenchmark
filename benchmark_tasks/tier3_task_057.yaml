@@ -43,3 +43,48 @@ blocks:
   - 0
   - 0
   - 90
+initial_blocks:
+- name: 4x2_brick_1
+  type: brick_4x2
+  color: yellow
+  pos:
+  - 0.6284
+  - -0.1145
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_2
+  type: brick_4x2
+  color: green
+  pos:
+  - 0.4951
+  - -0.1257
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_3
+  type: brick_4x2
+  color: yellow
+  pos:
+  - 0.3851
+  - -0.1168
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_4
+  type: brick_4x2
+  color: red
+  pos:
+  - 0.2538
+  - -0.13
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0

@@ -120,3 +120,125 @@ blocks:
   - 0
   - 0
   - 0
+initial_blocks:
+- name: 2x2_brick_3
+  type: brick_2x2
+  color: blue
+  pos:
+  - 0.3869
+  - -0.2855
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_1
+  type: brick_4x2
+  color: yellow
+  pos:
+  - 0.2519
+  - -0.2142
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_2
+  type: brick_4x2
+  color: blue
+  pos:
+  - 0.6128
+  - -0.2053
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_7
+  type: brick_2x2
+  color: green
+  pos:
+  - 0.3864
+  - -0.203
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_4
+  type: brick_4x2
+  color: green
+  pos:
+  - 0.3885
+  - -0.1257
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 4x2_brick_5
+  type: brick_4x2
+  color: red
+  pos:
+  - 0.2672
+  - -0.2869
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_10
+  type: brick_2x2
+  color: yellow
+  pos:
+  - 0.5014
+  - -0.1268
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_6
+  type: brick_2x2
+  color: yellow
+  pos:
+  - 0.2683
+  - -0.1145
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_11
+  type: brick_2x2
+  color: green
+  pos:
+  - 0.4987
+  - -0.2119
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_8
+  type: brick_2x2
+  color: green
+  pos:
+  - 0.5105
+  - -0.2963
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_9
+  type: brick_2x2
+  color: yellow
+  pos:
+  - 0.6229
+  - -0.1237
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0

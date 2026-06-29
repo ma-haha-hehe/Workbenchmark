@@ -43,3 +43,48 @@ blocks:
   - 0
   - 0
   - 90
+initial_blocks:
+- name: 2x2_brick_1
+  type: brick_2x2
+  color: blue
+  pos:
+  - 0.5027
+  - -0.1173
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_2
+  type: brick_2x2
+  color: red
+  pos:
+  - 0.2493
+  - -0.1312
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_3
+  type: brick_2x2
+  color: red
+  pos:
+  - 0.3821
+  - -0.131
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
+- name: 2x2_brick_4
+  type: brick_2x2
+  color: yellow
+  pos:
+  - 0.631
+  - -0.1213
+  - 0.0495
+  rotation:
+  - 0
+  - 0
+  - 0
