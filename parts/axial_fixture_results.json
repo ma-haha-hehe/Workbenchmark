@@ -1,0 +1,51 @@
+{
+  "scope": "aligned axial fixture; not robot or measured-material validation",
+  "parameters": {
+    "sliding_friction": 0.3,
+    "torsional_friction_m": 0.001,
+    "rolling_friction_m": 5e-05,
+    "contact_time_constant_s": 0.03,
+    "damping_ratio": 1.0
+  },
+  "source_sha256": "3c975d2350547bed6c2fed0692753ce4dcc25dc4fd5c58a8c78de62c5aaee162",
+  "mujoco_version": "3.11.0",
+  "results": [
+    {
+      "part": "brick_2x2",
+      "press_force_N": 3.0,
+      "solver": {
+        "cone": "mjCONE_PYRAMIDAL",
+        "algorithm": "mjSOL_NEWTON",
+        "timestep_s": 0.0005,
+        "iterations": 100
+      },
+      "seating_error_m": -5.936283860308311e-10,
+      "released_error_m": 3.071003787324944e-06,
+      "pullout_force_N": 3.0,
+      "pullout_ramp_N_per_s": 2.0,
+      "pullout_limit_N": 12.0,
+      "max_contact_depth_m": 4.9985738727863755e-05,
+      "generated_model_sha256": "6e13a7f4096dea4c51b1aab78f81243691b36ff0cca1685f434c32a74ac2276d",
+      "passed": true
+    },
+    {
+      "part": "brick_4x2",
+      "press_force_N": 3.0,
+      "solver": {
+        "cone": "mjCONE_PYRAMIDAL",
+        "algorithm": "mjSOL_NEWTON",
+        "timestep_s": 0.0005,
+        "iterations": 100
+      },
+      "seating_error_m": -3.2163385496608576e-10,
+      "released_error_m": 2.9242387431620276e-06,
+      "pullout_force_N": 5.9,
+      "pullout_ramp_N_per_s": 2.0,
+      "pullout_limit_N": 12.0,
+      "max_contact_depth_m": 4.9985723548702306e-05,
+      "generated_model_sha256": "a270486350fa57aa1ffbbd4ede73e732d4d5170b82da03354f1848e7fff8ee84",
+      "passed": true
+    }
+  ],
+  "passed": true
+}

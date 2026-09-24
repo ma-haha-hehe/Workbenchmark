@@ -1,0 +1,56 @@
+{
+  "geometry": "hollow_plastic_clutch_v2",
+  "task_count": 400,
+  "source_repository": "https://github.com/ma-haha-hehe/Workbenchmark",
+  "source_commit": "213acb19744607ca69ae285f205a851e7a78b7e2",
+  "generator_sha256": "702235ddf7eb6654638a65d36342847842de75e94c65c1a8528f2be85261b683",
+  "scene_builder_sha256": "ac2d1659ed0db201a710abe91d3d7b28ed2a21e9d0170aee6e49060165f4fbec",
+  "contact_profile": "plastic",
+  "solver": {
+    "cone": "pyramidal",
+    "algorithm": "Newton",
+    "timestep_s": 0.0005,
+    "iterations": 100
+  },
+  "contact_parameters": {
+    "sliding_friction": 0.3,
+    "torsional_friction_m": 0.001,
+    "rolling_friction_m": 5e-05,
+    "contact_time_constant_s": 0.03,
+    "damping_ratio": 1.0
+  },
+  "plastic_contact_sha256": "3c975d2350547bed6c2fed0692753ce4dcc25dc4fd5c58a8c78de62c5aaee162",
+  "scope": "self-authored contact approximation; no measured material calibration; not assembly validation",
+  "parts": [
+    {
+      "type": "brick_2x2",
+      "instances": 1056,
+      "mjcf": "brick_2x2.xml",
+      "sha256": "96cffb2e8c24cd1034db89a9427b15cd4409b1a2683a4776ec35d03db2aa2b79",
+      "mass_kg": 0.012,
+      "outer_body_dimensions_m": [
+        0.0318,
+        0.0318,
+        0.0192
+      ],
+      "nominal_axis_clearance_m": 0.0002,
+      "resting_test_seconds": 1.0,
+      "max_contact_penetration_m": 5.660978977251041e-11
+    },
+    {
+      "type": "brick_4x2",
+      "instances": 953,
+      "mjcf": "brick_4x2.xml",
+      "sha256": "1a0aa4ec1bd96589e35929f81bf89701ede5211109f8abd3e23b47fe65e53e0a",
+      "mass_kg": 0.022,
+      "outer_body_dimensions_m": [
+        0.0638,
+        0.0318,
+        0.0192
+      ],
+      "nominal_axis_clearance_m": 0.0002,
+      "resting_test_seconds": 1.0,
+      "max_contact_penetration_m": 4.8517374146017644e-11
+    }
+  ]
+}
