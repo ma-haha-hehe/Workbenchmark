@@ -1,0 +1,53 @@
+<mujoco model="brick_2x2">
+  <compiler angle="radian" autolimits="true" />
+  <option timestep=".0005" integrator="implicitfast" cone="pyramidal" solver="Newton" iterations="100" />
+  <worldbody>
+    <geom name="floor" type="plane" size=".2 .2 .01" rgba=".44 .48 .53 1" friction="1 .005 .0001" priority="3" solref=".0011 1" solimp=".9999 .9999 .0001" />
+    <body name="brick_2x2" quat="1.0000000000 0 0 0.0000000000" pos="0.000000 0.000000 0.018600">
+      <freejoint />
+      <geom type="mesh" pos="0 0 -0.0004000000000000002" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" mesh="clutch_shell_brick_2x2_0" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.01515 0 -0.009999999999999998" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" mesh="clutch_shell_brick_2x2_1" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0 -0.01515 -0.009999999999999998" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" mesh="clutch_shell_brick_2x2_2" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.01515 0 -0.009999999999999998" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" mesh="clutch_shell_brick_2x2_3" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0 0.01515 -0.009999999999999998" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" mesh="clutch_shell_brick_2x2_4" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.00655 0.0 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 0.0" name="clutch_brick_2x2_tube_5" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.006051410937948928 0.0025065764819913383 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 0.39269908169872414" name="clutch_brick_2x2_tube_6" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.0046315494167718865 0.004631549416771886 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 0.7853981633974483" name="clutch_brick_2x2_tube_7" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.0025065764819913387 0.006051410937948928 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 1.1780972450961724" name="clutch_brick_2x2_tube_8" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="4.010718267207582e-19 0.00655 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 1.5707963267948966" name="clutch_brick_2x2_tube_9" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.002506576481991338 0.006051410937948928 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 1.9634954084936207" name="clutch_brick_2x2_tube_10" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.004631549416771886 0.0046315494167718865 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 2.356194490192345" name="clutch_brick_2x2_tube_11" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.006051410937948928 0.002506576481991339 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 2.748893571891069" name="clutch_brick_2x2_tube_12" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.00655 8.021436534415164e-19 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 3.141592653589793" name="clutch_brick_2x2_tube_13" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.006051410937948929 -0.002506576481991338 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 3.5342917352885173" name="clutch_brick_2x2_tube_14" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.004631549416771888 -0.004631549416771886 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 3.9269908169872414" name="clutch_brick_2x2_tube_15" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-0.0025065764819913417 -0.006051410937948927 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 4.319689898685965" name="clutch_brick_2x2_tube_16" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="-1.2032154801622745e-18 -0.00655 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 4.71238898038469" name="clutch_brick_2x2_tube_17" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.0025065764819913396 -0.006051410937948928 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 5.105088062083414" name="clutch_brick_2x2_tube_18" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.004631549416771885 -0.004631549416771888 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 5.497787143782138" name="clutch_brick_2x2_tube_19" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="mesh" pos="0.006051410937948927 -0.002506576481991342 -0.009999999999999998" solref="0.03 1.0" solimp=".9 .95 .001" friction="0.3 0.001 5e-05" priority="2" euler="0 0 5.890486225480862" name="clutch_brick_2x2_tube_20" mesh="clutch_tube" condim="6" rgba="0 0 1 1" />
+      <geom type="cylinder" size="0.0042 0.002" pos="-0.008 -0.008 0.0026" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" rgba="0 0 1 1" />
+      <geom type="cylinder" size="0.0042 0.002" pos="-0.008 0.008 0.0026" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" rgba="0 0 1 1" />
+      <geom type="cylinder" size="0.0042 0.002" pos="0.008 -0.008 0.0026" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" rgba="0 0 1 1" />
+      <geom type="cylinder" size="0.0042 0.002" pos="0.008 0.008 0.0026" solref=".001 1" solimp=".9999 .9999 .0001" friction="1 .005 .0001" priority="1" rgba="0 0 1 1" />
+      <inertial pos="0 0 -0.009" mass="0.012" diaginertia="1.3798800000000002e-06 1.3798800000000002e-06 2.0224800000000004e-06" />
+      <geom type="mesh" mesh="clutch_rib" pos="-0.008 -0.01335 -.0176" euler="0 0 3.141592653589793" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="0.008 -0.01335 -.0176" euler="0 0 3.141592653589793" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="-0.01335 -0.008 -.0176" euler="0 0 1.5707963267948966" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="-0.01335 0.008 -.0176" euler="0 0 1.5707963267948966" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="-0.008 0.01335 -.0176" euler="0 0 0" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="0.008 0.01335 -.0176" euler="0 0 0" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="0.01335 -0.008 -.0176" euler="0 0 -1.5707963267948966" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+      <geom type="mesh" mesh="clutch_rib" pos="0.01335 0.008 -.0176" euler="0 0 -1.5707963267948966" condim="6" solref="0.03 1.0" solimp=".9 .95 .001" priority="2" friction="0.3 0.001 5e-05" rgba="0 0 1 1" />
+    </body>
+  </worldbody>
+  <asset>
+    <mesh name="clutch_tube" vertex="-0.00105 -0.00130287600633676 -0.0086 -0.00105 0.00130287600633676 -0.0086 0.00014999999999999996 -0.00130287600633676 -0.0086 0.00014999999999999996 0.00130287600633676 -0.0086 -0.0006 -0.00130287600633676 -0.0066 -0.0006 0.00130287600633676 -0.0066 0.0006 -0.00130287600633676 -0.0066 0.0006 0.00130287600633676 -0.0066 -0.0006 -0.00130287600633676 0.0086 -0.0006 0.00130287600633676 0.0086 0.0006 -0.00130287600633676 0.0086 0.0006 0.00130287600633676 0.0086" />
+    <mesh name="clutch_rib" vertex="-0.001 0.0011 -0.001 -0.001 0.0012 -0.001 0.001 0.0011 -0.001 0.001 0.0012 -0.001 -0.001 -0.0012 0.001 -0.001 0.0012 0.001 0.001 -0.0012 0.001 0.001 0.0012 0.001 -0.001 -0.0012 0.0162 -0.001 0.0012 0.0162 0.001 -0.0012 0.0162 0.001 0.0012 0.0162" />
+    <mesh name="clutch_shell_brick_2x2_0" vertex="-0.0159 -0.0159 -0.001 -0.0159 -0.0159 0.001 -0.0159 0.0159 -0.001 -0.0159 0.0159 0.001 0.0159 -0.0159 -0.001 0.0159 -0.0159 0.001 0.0159 0.0159 -0.001 0.0159 0.0159 0.001" />
+    <mesh name="clutch_shell_brick_2x2_1" vertex="-0.00075 -0.0159 -0.0086 -0.00075 -0.0159 0.0086 -0.00075 0.0159 -0.0086 -0.00075 0.0159 0.0086 0.00075 -0.0159 -0.0086 0.00075 -0.0159 0.0086 0.00075 0.0159 -0.0086 0.00075 0.0159 0.0086" />
+    <mesh name="clutch_shell_brick_2x2_2" vertex="-0.014400000000000001 -0.00075 -0.0086 -0.014400000000000001 -0.00075 0.0086 -0.014400000000000001 0.00075 -0.0086 -0.014400000000000001 0.00075 0.0086 0.014400000000000001 -0.00075 -0.0086 0.014400000000000001 -0.00075 0.0086 0.014400000000000001 0.00075 -0.0086 0.014400000000000001 0.00075 0.0086" />
+    <mesh name="clutch_shell_brick_2x2_3" vertex="-0.00075 -0.0159 -0.0086 -0.00075 -0.0159 0.0086 -0.00075 0.0159 -0.0086 -0.00075 0.0159 0.0086 0.00075 -0.0159 -0.0086 0.00075 -0.0159 0.0086 0.00075 0.0159 -0.0086 0.00075 0.0159 0.0086" />
+    <mesh name="clutch_shell_brick_2x2_4" vertex="-0.014400000000000001 -0.00075 -0.0086 -0.014400000000000001 -0.00075 0.0086 -0.014400000000000001 0.00075 -0.0086 -0.014400000000000001 0.00075 0.0086 0.014400000000000001 -0.00075 -0.0086 0.014400000000000001 -0.00075 0.0086 0.014400000000000001 0.00075 -0.0086 0.014400000000000001 0.00075 0.0086" />
+  </asset>
+</mujoco>
