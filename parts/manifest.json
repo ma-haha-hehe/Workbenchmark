@@ -13,20 +13,21 @@
     "iterations": 100
   },
   "contact_parameters": {
+    "contact_dimensions": 6,
     "sliding_friction": 0.3,
     "torsional_friction_m": 0.001,
     "rolling_friction_m": 5e-05,
     "contact_time_constant_s": 0.03,
     "damping_ratio": 1.0
   },
-  "plastic_contact_sha256": "3c975d2350547bed6c2fed0692753ce4dcc25dc4fd5c58a8c78de62c5aaee162",
+  "plastic_contact_sha256": "47f850c5e93f1bb28dfdd563560fd619150a24b38fcf3dfa73f3aa036dd2e01c",
   "scope": "self-authored contact approximation; no measured material calibration; not assembly validation",
   "parts": [
     {
       "type": "brick_2x2",
       "instances": 1056,
       "mjcf": "brick_2x2.xml",
-      "sha256": "96cffb2e8c24cd1034db89a9427b15cd4409b1a2683a4776ec35d03db2aa2b79",
+      "sha256": "1fb5de688476c3c0153c3ac534e12f45f5669c8db10b4509fc213dd41fd4164c",
       "mass_kg": 0.012,
       "outer_body_dimensions_m": [
         0.0318,
@@ -41,7 +42,7 @@
       "type": "brick_4x2",
       "instances": 953,
       "mjcf": "brick_4x2.xml",
-      "sha256": "1a0aa4ec1bd96589e35929f81bf89701ede5211109f8abd3e23b47fe65e53e0a",
+      "sha256": "5263bd191958da374094dcfc6eb61fa967f4c2cf26d2c66445dabd9989d678f2",
       "mass_kg": 0.022,
       "outer_body_dimensions_m": [
         0.0638,

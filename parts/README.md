@@ -27,10 +27,10 @@ The generated models retain robot_korea's Apache-2.0 license; see LICENSE and NO
 This notice applies to this parts directory and does not assign a license to the
 original benchmark task YAML files.
 
-Run `python parts/validate.py` from the repository root with MuJoCo 3.11.0 and
-PyYAML installed to check checksums, the 400-task inventory and free resting
-contact. The workflow runs these same checks; it does not run robot assembly.
-
-`axial_fixture_results.json` records a separate constrained insertion/pullout
-fixture: 3 N insertion and a 2 N/s pullout ramp. It describes simulated contact
-behaviour for these parameters, not measurements of manufactured parts.
+The internal fit uses six-dimensional contact: sliding friction 0.3,
+torsional friction length 1 mm, and rolling friction length 0.05 mm.
+`axial_fixture_results.json` records aligned insertion at 3 N and pullout
+at 3.0 N (2x2) / 5.8 N (4x2). These are simulation fixture results, not
+measurements of manufactured plastic parts or robot assembly success.
+Run `python parts/validate.py` to check the inventory, file hashes,
+compiled contact parameters and one-second resting dynamics.

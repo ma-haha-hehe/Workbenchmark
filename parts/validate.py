@@ -25,6 +25,14 @@ def validate():
         raise ValueError('task count differs from the part manifest')
     if inventory != Counter({p['type']: p['instances'] for p in manifest['parts']}):
         raise ValueError('part types or counts differ from the task inventory')
+    parameters = manifest['contact_parameters']
+    fixture = json.loads((here / 'axial_fixture_results.json').read_text())
+    if (fixture['parameters'] != parameters
+            or fixture['source_sha256'] != manifest['plastic_contact_sha256']):
+        raise ValueError('axial fixture uses different contact parameters or source')
+    if ({row['part'] for row in fixture['results']} != set(inventory)
+            or not all(row['passed'] for row in fixture['results'])):
+        raise ValueError('axial fixture does not cover both published part types')
     for part in manifest['parts']:
         path = here / part['mjcf']
         if hashlib.sha256(path.read_bytes()).hexdigest() != part['sha256']:
@@ -35,6 +43,17 @@ def validate():
         model = mujoco.MjModel.from_xml_path(str(path))
         if model.neq or model.nq != 7:
             raise ValueError(f'expected one unconstrained free body: {path.name}')
+        fit = model.geom_priority == 2
+        expected_friction = [parameters['sliding_friction'],
+                             parameters['torsional_friction_m'],
+                             parameters['rolling_friction_m']]
+        if (not np.any(fit)
+                or not np.all(model.geom_condim[fit] == parameters['contact_dimensions'])
+                or not np.allclose(model.geom_friction[fit], expected_friction, rtol=0, atol=1e-12)
+                or not np.allclose(model.geom_solref[fit],
+                    [parameters['contact_time_constant_s'], parameters['damping_ratio']],
+                    rtol=0, atol=1e-12)):
+            raise ValueError(f'compiled contact parameters differ from manifest: {path.name}')
         body = model.body(part['type']).id
         if abs(float(model.body_mass[body]) - part['mass_kg']) > 1e-9:
             raise ValueError(f'mass differs from manifest: {path.name}')

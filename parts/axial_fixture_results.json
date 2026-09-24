@@ -1,13 +1,14 @@
 {
   "scope": "aligned axial fixture; not robot or measured-material validation",
   "parameters": {
+    "contact_dimensions": 6,
     "sliding_friction": 0.3,
     "torsional_friction_m": 0.001,
     "rolling_friction_m": 5e-05,
     "contact_time_constant_s": 0.03,
     "damping_ratio": 1.0
   },
-  "source_sha256": "3c975d2350547bed6c2fed0692753ce4dcc25dc4fd5c58a8c78de62c5aaee162",
+  "source_sha256": "47f850c5e93f1bb28dfdd563560fd619150a24b38fcf3dfa73f3aa036dd2e01c",
   "mujoco_version": "3.11.0",
   "results": [
     {
@@ -19,13 +20,13 @@
         "timestep_s": 0.0005,
         "iterations": 100
       },
-      "seating_error_m": -5.936283860308311e-10,
-      "released_error_m": 3.071003787324944e-06,
+      "seating_error_m": -1.309624041156976e-08,
+      "released_error_m": 7.855815659065651e-06,
       "pullout_force_N": 3.0,
       "pullout_ramp_N_per_s": 2.0,
       "pullout_limit_N": 12.0,
-      "max_contact_depth_m": 4.9985738727863755e-05,
-      "generated_model_sha256": "6e13a7f4096dea4c51b1aab78f81243691b36ff0cca1685f434c32a74ac2276d",
+      "max_contact_depth_m": 4.9985708281132485e-05,
+      "generated_model_sha256": "15be4b82c5765b168c431bcf9add27e5feaf135eddd9c768ac1d7d97c3691f8e",
       "passed": true
     },
     {
@@ -37,13 +38,13 @@
         "timestep_s": 0.0005,
         "iterations": 100
       },
-      "seating_error_m": -3.2163385496608576e-10,
-      "released_error_m": 2.9242387431620276e-06,
-      "pullout_force_N": 5.9,
+      "seating_error_m": -3.17070793232066e-10,
+      "released_error_m": 7.316998598957264e-06,
+      "pullout_force_N": 5.800000000000001,
       "pullout_ramp_N_per_s": 2.0,
       "pullout_limit_N": 12.0,
-      "max_contact_depth_m": 4.9985723548702306e-05,
-      "generated_model_sha256": "a270486350fa57aa1ffbbd4ede73e732d4d5170b82da03354f1848e7fff8ee84",
+      "max_contact_depth_m": 4.998572337506602e-05,
+      "generated_model_sha256": "a9455b42a932ab760ad21bf4ed222e71b9bda1066e91af53de72358fafd8797d",
       "passed": true
     }
   ],
