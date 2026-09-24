@@ -16,7 +16,7 @@ These are simplified, self-authored hollow rigid-body models, not manufacturer C
 Wall, tube, stud, mass and friction parameters are approximations. Plastic deformation
 and clutch force have not been calibrated. Unsupported cantilevers may fall;
 resting-contact validation does not demonstrate successful robotic assembly.
-This variant includes compliant internal ribs and lead-ins. The fit uses contact forces and friction, without attachment constraints. Copy the asset meshes as well as the body when reusing this model. Parameters are uncalibrated; see manifest.json. Generate this variant with --contact-profile plastic.
+This variant includes compliant internal ribs and lead-ins. Its shell uses equivalent convex hulls to avoid near-parallel analytic box contact artifacts. The fit uses contact forces and friction, without attachment constraints. Copy the asset meshes as well as the body when reusing this model. Parameters are uncalibrated; see manifest.json. Generate this variant with --contact-profile plastic.
 
 `manifest.json` records source provenance, instance counts, file hashes and the
 one-second resting-contact check. Regenerate with robot_korea's

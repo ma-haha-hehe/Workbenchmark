@@ -58,6 +58,20 @@ def validate():
         if abs(float(model.body_mass[body]) - part['mass_kg']) > 1e-9:
             raise ValueError(f'mass differs from manifest: {path.name}')
         state = mujoco.MjData(model)
+        mujoco.mj_forward(model, state)
+        shell = [geom for geom in range(model.ngeom)
+                 if model.geom_bodyid[geom] == body and model.geom_priority[geom] == 1
+                 and model.geom_type[geom] in (mujoco.mjtGeom.mjGEOM_BOX, mujoco.mjtGeom.mjGEOM_MESH)]
+        minima, maxima = [], []
+        for geom in shell:
+            rotation = state.geom_xmat[geom].reshape(3, 3)
+            center = state.geom_xpos[geom] + rotation @ model.geom_aabb[geom, :3]
+            extent = np.abs(rotation) @ model.geom_aabb[geom, 3:]
+            minima.append(center-extent)
+            maxima.append(center+extent)
+        dimensions = np.max(maxima, axis=0)-np.min(minima, axis=0)
+        if not np.allclose(dimensions, part['outer_body_dimensions_m'], rtol=0, atol=1e-7):
+            raise ValueError(f'body dimensions differ from manifest: {path.name}')
         peak = 0.
         for _ in range(round(1. / model.opt.timestep)):
             mujoco.mj_step(model, state)

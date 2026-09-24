@@ -2,9 +2,9 @@
   "geometry": "hollow_plastic_clutch_v2",
   "task_count": 400,
   "source_repository": "https://github.com/ma-haha-hehe/Workbenchmark",
-  "source_commit": "213acb19744607ca69ae285f205a851e7a78b7e2",
-  "generator_sha256": "702235ddf7eb6654638a65d36342847842de75e94c65c1a8528f2be85261b683",
-  "scene_builder_sha256": "ac2d1659ed0db201a710abe91d3d7b28ed2a21e9d0170aee6e49060165f4fbec",
+  "source_commit": "1f831bc91ff50300acbc285480fe0807ddd74c13",
+  "generator_sha256": "2b0a81bb6949211d884aa54dbb64ad7d0c4e0d5b86e7d17b579c6802703701df",
+  "scene_builder_sha256": "03404b893b42f3e8c6a7952c50f81cb98fbef45e43761acce6637a507264d28d",
   "contact_profile": "plastic",
   "solver": {
     "cone": "pyramidal",
@@ -20,14 +20,14 @@
     "contact_time_constant_s": 0.03,
     "damping_ratio": 1.0
   },
-  "plastic_contact_sha256": "47f850c5e93f1bb28dfdd563560fd619150a24b38fcf3dfa73f3aa036dd2e01c",
+  "plastic_contact_sha256": "b56547ad3d9661543ebcd817c93ebd2061402f768fd792f201ef88be58ea9233",
   "scope": "self-authored contact approximation; no measured material calibration; not assembly validation",
   "parts": [
     {
       "type": "brick_2x2",
       "instances": 1056,
       "mjcf": "brick_2x2.xml",
-      "sha256": "1fb5de688476c3c0153c3ac534e12f45f5669c8db10b4509fc213dd41fd4164c",
+      "sha256": "fae0ea90fafc943157f5a94c98f1d8eef388492f77d73ac4e2ce783a03edf3d9",
       "mass_kg": 0.012,
       "outer_body_dimensions_m": [
         0.0318,
@@ -36,13 +36,13 @@
       ],
       "nominal_axis_clearance_m": 0.0002,
       "resting_test_seconds": 1.0,
-      "max_contact_penetration_m": 5.660978977251041e-11
+      "max_contact_penetration_m": 9.058019066910533e-07
     },
     {
       "type": "brick_4x2",
       "instances": 953,
       "mjcf": "brick_4x2.xml",
-      "sha256": "5263bd191958da374094dcfc6eb61fa967f4c2cf26d2c66445dabd9989d678f2",
+      "sha256": "afbfb46a8883e63e561a1bad3be7991beb1a42ce9d8a3d4538671a5c0ba4b3fe",
       "mass_kg": 0.022,
       "outer_body_dimensions_m": [
         0.0638,
@@ -51,7 +51,7 @@
       ],
       "nominal_axis_clearance_m": 0.0002,
       "resting_test_seconds": 1.0,
-      "max_contact_penetration_m": 4.8517374146017644e-11
+      "max_contact_penetration_m": 9.838999099343049e-07
     }
   ]
 }

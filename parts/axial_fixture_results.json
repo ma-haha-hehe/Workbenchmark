@@ -8,7 +8,7 @@
     "contact_time_constant_s": 0.03,
     "damping_ratio": 1.0
   },
-  "source_sha256": "47f850c5e93f1bb28dfdd563560fd619150a24b38fcf3dfa73f3aa036dd2e01c",
+  "source_sha256": "b56547ad3d9661543ebcd817c93ebd2061402f768fd792f201ef88be58ea9233",
   "mujoco_version": "3.11.0",
   "results": [
     {
@@ -20,13 +20,13 @@
         "timestep_s": 0.0005,
         "iterations": 100
       },
-      "seating_error_m": -1.309624041156976e-08,
-      "released_error_m": 7.855815659065651e-06,
+      "seating_error_m": -6.584767953121684e-09,
+      "released_error_m": 7.838527550530633e-06,
       "pullout_force_N": 3.0,
       "pullout_ramp_N_per_s": 2.0,
       "pullout_limit_N": 12.0,
-      "max_contact_depth_m": 4.9985708281132485e-05,
-      "generated_model_sha256": "15be4b82c5765b168c431bcf9add27e5feaf135eddd9c768ac1d7d97c3691f8e",
+      "max_contact_depth_m": 4.998573527287519e-05,
+      "generated_model_sha256": "0a4c59ca8590327350ace29813f2d0c87e5dbae3e19922100709e6c1a6093a11",
       "passed": true
     },
     {
@@ -38,13 +38,13 @@
         "timestep_s": 0.0005,
         "iterations": 100
       },
-      "seating_error_m": -3.17070793232066e-10,
-      "released_error_m": 7.316998598957264e-06,
+      "seating_error_m": 6.199099913950512e-11,
+      "released_error_m": 7.311373695719631e-06,
       "pullout_force_N": 5.800000000000001,
       "pullout_ramp_N_per_s": 2.0,
       "pullout_limit_N": 12.0,
-      "max_contact_depth_m": 4.998572337506602e-05,
-      "generated_model_sha256": "a9455b42a932ab760ad21bf4ed222e71b9bda1066e91af53de72358fafd8797d",
+      "max_contact_depth_m": 4.998573197347265e-05,
+      "generated_model_sha256": "fab75ccbe28c7c0c957b5c666ad8d89509bdb34385e2a5c29af3a1229c829d99",
       "passed": true
     }
   ],
